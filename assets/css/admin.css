@@ -1,0 +1,380 @@
+/* AI Blog Generator Admin Styles */
+
+/* Dashboard Stats Grid */
+.aibg-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.aibg-stat-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.aibg-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.aibg-stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0073aa, #00a0d2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.aibg-stat-card .stat-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.aibg-stat-card .stat-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Quick Actions */
+.aibg-quick-actions {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.aibg-quick-actions h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.aibg-quick-actions .action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.aibg-quick-actions .button-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Recent Posts Table */
+.aibg-recent-posts {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.aibg-recent-posts h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.status-publish {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-badge.status-draft {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.status-pending {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.status-badge.status-future {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+/* System Status */
+.aibg-system-status {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.aibg-system-status h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.status-ok {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.status-error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.status-warning {
+    color: #ffb900;
+    font-weight: bold;
+}
+
+/* Settings Page */
+.aibg-settings .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.aibg-settings .tab-content {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 25px;
+    border-radius: 0 0 8px 8px;
+}
+
+.aibg-settings .tab-content.active {
+    display: block;
+}
+
+.aibg-settings .form-table th {
+    width: 250px;
+}
+
+/* Generate Page */
+.aibg-generate-form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 800px;
+}
+
+.aibg-generate-form .form-table {
+    margin-top: 0;
+}
+
+#aibg-generate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#aibg-generation-progress {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#aibg-generation-result .notice {
+    margin: 20px 0;
+}
+
+/* Posts List */
+.aibg-posts-list .wp-list-table img {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.aibg-posts-list .wp-list-table td {
+    vertical-align: middle;
+}
+
+.aibg-posts-list .wp-list-table a.delete {
+    color: #dc3232;
+}
+
+.aibg-posts-list .wp-list-table a.delete:hover {
+    color: #a00;
+}
+
+/* Analytics Page */
+.aibg-analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.analytics-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.analytics-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.analytics-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.analytics-card canvas {
+    max-height: 300px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .aibg-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .aibg-quick-actions .action-buttons {
+        flex-direction: column;
+    }
+    
+    .aibg-quick-actions .button-hero {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .aibg-analytics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Loading Spinner */
+@keyframes aibg-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.aibg-loading {
+    display: inline-block;
+    animation: aibg-spin 1s linear infinite;
+}
+
+/* Progress Bar */
+.aibg-progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #f0f0f1;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px 0;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.aibg-progress-bar .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0073aa, #00a0d2);
+    border-radius: 15px;
+    transition: width 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Buttons */
+.button.aibg-button {
+    background: linear-gradient(135deg, #0073aa, #00a0d2);
+    border: none;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.button.aibg-button:hover {
+    background: linear-gradient(135deg, #005a87, #008ab8);
+    color: #fff;
+}
+
+/* Tooltips */
+.aibg-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.aibg-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.aibg-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Empty State */
+.aibg-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.aibg-empty-state .dashicons {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+}
+
+.aibg-empty-state h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.aibg-empty-state p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
