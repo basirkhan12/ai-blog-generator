@@ -396,7 +396,7 @@ GPL v2 or later
 
 ## Credits
 
-- Developed by [Your Name]
+- Developed by Basir uddin
 - Uses Deepseek API for content generation
 - Uses Unsplash API for images
 - Built with WordPress best practices
