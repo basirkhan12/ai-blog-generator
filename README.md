@@ -365,10 +365,8 @@ npm run lint:js
 ## Support & Contributing
 
 ### Get Help
-
-- Documentation: [plugin-site.com/docs](https://plugin-site.com/docs)
-- Support Forum: WordPress.org support forums
-- Email: support@yoursite.com
+- Website: [Unlewebsite](https://unclewebsite.com)
+- Email: basiru004@gmail.com
 
 ### Contributing
 
